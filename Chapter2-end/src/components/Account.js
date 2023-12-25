@@ -9,6 +9,8 @@ function Account() {
  const points = useSelector(state=>state.bonus.points)
  const dispatch = useDispatch()
 
+
+
   return (
       <div className="card">
         <div className="container">

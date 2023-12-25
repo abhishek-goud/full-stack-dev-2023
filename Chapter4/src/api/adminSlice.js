@@ -9,7 +9,7 @@ export const adminApi = createApi({
       transformResponse:(response)=>response.sort((a,b)=>b.amount-a.amount),
       providesTags: ['accounts'],
     }),
-    addAccount: builder.mutation({
+    addAccount: builder.mutation({               // post is only .query and post,put,etc are mutation
       query: (amount, id) => ({
         url: 'accounts',
         method: 'POST',
